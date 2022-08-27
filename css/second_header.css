@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* search butoon css  */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #1a1b1b;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 50%;
+  position: absolute;
+  top: 18vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* subNav start from Here */
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25vh;
+  padding: 0 20px;
+}
+
+.card1 .status_btn {
+  background-color: red;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  font-size: 10px;
+  margin: 3px 0 3px 1px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+  padding: 0 20px;
+}
+
+.itmButton {
+  text-align: center;
+
+}
+
+.sec_btn {
+  color: black;
+  padding: 6px;
+  font-size: 13px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #ffef00;
+  background: linear-gradient(to bottom, #FFA500 100%, #FFA500 100%);
+  font-family: Arial;
+  margin: 3px 0 3px 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px #f34b4b;
+
+}
+
+
+
+/* Alert css start here */
+
+.alert {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #d8933a, #09d261);
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  font-family: LATO, sans-serif;
+  font-size: 13px;
+}
+
+.alert_2 {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #ff2f2f, #b95651);
+  margin: 5px 20px;
+  padding: 5px;
+  font-family: LATO, sans-serif;
+  font-size: 13px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background: linear-gradient(135deg, #000000, #3d3d3e);
+  margin: auto;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+}
+
+.modal2 {
+  background: linear-gradient(135deg, #ff2f2f, #b95651);
+}
+
+.popup-content h4 {
+  color: rgb(219, 219, 219);
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-content p {
+  font-size: 12px;
+  padding-top: 10px;
+  color: rgb(211, 211, 211);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* .popup-content img {
+  width: 100%;
+  padding: 20px;
+} */
+
+.popup-content ul {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 10px;
+  margin-left: 20px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* The Close Button */
+.close {
+  color: #1a1a1a;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1 {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* First Pop up (teams) */
+
+.popup {
+  background-color: #000000a6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  /* 	display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.popup-content {
+  display: none;
+  max-width: 800px;
+  width: 100%;
+  background: linear-gradient(135deg, #000000, #3d3d3e);
+  /* background: linear-gradient(135deg, #ff2f2f, #b95651); */
+  min-height: 400px;
+  overflow: auto;
+  position: relative;
+  padding: 35px;
+  margin: 0 15px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+.popup-content .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+body.showPopup .popup {
+  display: flex;
+}
+body.showPopup .popup-content {
+  display: block;
+  animation: popup 0.3s forwards;
+}
+body.removePopup .popup-content {
+  animation: popupclose 0.3s forwards !important;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes popupclose {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+
+
+/* cards design start here */
+.team_card{
+  display: grid;
+  
+  gap:2em;
+}
+@media (min-width: 500px) {
+  .team_card{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .team_card {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .team_card {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  /* background-color: #244bf8df; */
+ 
+}
+
+.teams_imag{
+  padding: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius:  50%;
+}
+
+.title {
+  color: rgb(225, 224, 224);
+  padding: 5px;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.card p{
+  font-size: 13px;
+}
+
+/* button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+} */
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.name_head{
+  font-size: 15px;
+}
