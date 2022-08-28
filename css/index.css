@@ -21,7 +21,7 @@
 
 }
 
-@media (min-width: 400px) {
+@media (min-width: 390px) {
     .cards1 {
         grid-template-columns: repeat(2, 1fr);
     }
