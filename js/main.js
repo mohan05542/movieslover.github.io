@@ -55,4 +55,8 @@ function myFunction() {
     alert(" Disclaimer :: The Movies Lover website has been created from Project Purpose. This website is not made for the purpose of making money. The main purpose of creating this website is to develop skills.");
 }
 
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
+
 
