@@ -49,3 +49,10 @@ xhr.onload= function(){
     }
 }
 xhr.send()
+
+//video pop up
+
+function GFG_click(clicked){
+    document.getElementById("iframe").src
+    = "https://drive.google.com/file/d/"+clicked+"/preview";
+}
