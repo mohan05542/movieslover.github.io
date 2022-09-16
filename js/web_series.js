@@ -36,7 +36,7 @@ xhr.onload= function(){
                         <span class="year">${element["year"]}</span>
                         <p>Rating <span>${element["Rating"]}/10</span></p>
                         <div class="box">
-                            <a class="button" href="#popup1"><button style="width:100%;" id="${element["vid"]}" onClick="GFG_click(this.id)">Button1</button></a>
+                            <a class="button" href="#popup1"><button style="width:100%;" id="${element["vid"]}" onClick="GFG_click(this.id)">Watch Now</button></a>
                         </div>
                     </div>
                 </div>
