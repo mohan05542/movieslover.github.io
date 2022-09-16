@@ -14,7 +14,7 @@ let newsPro = document.getElementById('content');
 
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET','https://api.jsonbin.it/bins/orpB24Zw',true);
+xhr.open('GET','https://api.jsonbin.it/bins/CvNpHRhI',true);
 // xhr.open('GET','https://api.publicapis.org/entries',true);
 xhr.getResponseHeader('Content-type','application/json');
 
@@ -35,7 +35,9 @@ xhr.onload= function(){
                         <h4>${element["Name"]}</h4>
                         <span class="year">${element["year"]}</span>
                         <p>Rating <span>${element["Rating"]}/10</span></p>
-                        <a class="btn" href="${element.VideoUrl}"><button>Watch Now</button></a>
+                        <div class="box">
+                            <a class="button" href="#popup1"><button style="width:100%;" id="${element["vid"]}" onClick="GFG_click(this.id)">Button1</button></a>
+                        </div>
                     </div>
                 </div>
            </div>`;
@@ -49,3 +51,9 @@ xhr.onload= function(){
     }
 }
 xhr.send()
+
+function GFG_click(clicked){
+    document.getElementById("iframe").src
+    =clicked+"/preview";
+}
+
