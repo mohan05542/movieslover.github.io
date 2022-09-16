@@ -14,7 +14,7 @@ let newsPro = document.getElementById('content');
 
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET','https://api.jsonbin.it/bins/7wosdHW6',true);
+xhr.open('GET','https://api.jsonbin.it/bins/29H6noZa',true);
 // xhr.open('GET','https://api.publicapis.org/entries',true);
 xhr.getResponseHeader('Content-type','application/json');
 
@@ -49,3 +49,9 @@ xhr.onload= function(){
     }
 }
 xhr.send()
+
+
+function GFG_click(clicked){
+    document.getElementById("iframe").src
+    =clicked+"/preview";
+}
