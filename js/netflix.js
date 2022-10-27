@@ -14,8 +14,7 @@ let newsPro = document.getElementById('content');
 
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET','https://api.jsonbin.it/bins/jO0TWbvh',true);
-// xhr.open('GET','https://api.publicapis.org/entries',true);
+xhr.open('GET',' https://api.npoint.io/5b41ee91209c7cfd629a',true);
 xhr.getResponseHeader('Content-type','application/json');
 
 xhr.onload= function(){
