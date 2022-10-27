@@ -48,3 +48,8 @@ xhr.onload= function(){
     }
 }
 xhr.send()
+
+function GFG_click(clicked){
+    document.getElementById("iframe").src
+    =clicked+"/preview";
+}
