@@ -14,8 +14,7 @@ let newsPro = document.getElementById('content');
 
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET','https://api.npoint.io/8e01590abf2dd3ab0b94',true);
-// xhr.open('GET','https://api.publicapis.org/entries',true);
+xhr.open('GET',' https://api.npoint.io/5b41ee91209c7cfd629a',true);
 xhr.getResponseHeader('Content-type','application/json');
 
 xhr.onload= function(){
@@ -52,9 +51,7 @@ xhr.onload= function(){
 }
 xhr.send()
 
-//video pop up
-
 function GFG_click(clicked){
     document.getElementById("iframe").src
-    = "https://drive.google.com/file/d/"+clicked+"/preview";
+    =clicked+"/preview";
 }
